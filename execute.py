@@ -4,50 +4,50 @@ import git
 import sys
 from win10toast import ToastNotifier
 
-# path_root = "C:\\Users\\GDA-Admin\\Documents\\GTech\\Python\\development\\git\\repo\\"
-path_root = "C:\\Users\\GDA-Admin\\Documents\\GTech\\repo_gtech\\None\\Mapemall-2.0\\"
-dir_root = os.listdir(path_root)
+# pathRoot = "C:\\Users\\GDA-Admin\\Documents\\GTech\\Python\\development\\git\\repo\\"
+pathRoot = "C:\\Users\\GDA-Admin\\Documents\\GTech\\repo_gtech\\None\\Mapemall-2.0\\"
+dirRoot = os.listdir(pathRoot)
 
-param_service = (' ' .join(sys.argv[1:2:]))
-param_command = (' ' .join(sys.argv[2:]))
+paramService = (' ' .join(sys.argv[1:2:]))
+paramCommand = (' ' .join(sys.argv[2:]))
 
 
 def service_name():
-    if param_service == "jarvis":
-        j_path = path_root + "\\" + param_service
-        j_list = os.listdir(j_path)
-        for j in j_list:
-            os.chdir(j_path)
-            os_dir = os.listdir(j)
-            parent_dir = j_path + "\\" + j
-            os.chdir(parent_dir)
-            name_dir = os.path.basename(parent_dir)
-            print(name_dir)
-            os.system(param_command)
-    elif param_service == "helix":
-        h_path = path_root + "\\" + param_service
-        h_list = os.listdir(h_path)
-        for h in h_list:
-            os.chdir(h_path)
-            os_dir = os.listdir(h)
-            parent_dir = h_path + "\\" + h
-            os.chdir(parent_dir)
-            name_dir = os.path.basename(parent_dir)
-            print(name_dir)
-            os.system(param_command)
-    elif param_service == "friday":
-        f_path = path_root + "\\" + param_service
-        f_list = os.listdir(f_path)
-        for f in f_list:
-            os.chdir(f_path)
-            os_dir = os.listdir(f)
-            parent_dir = f_path + "\\" + f
-            os.chdir(parent_dir)
-            name_dir = os.path.basename(parent_dir)
-            print(name_dir)
-            os.system(param_command)
+    if paramService == "jarvis":
+        jPath = pathRoot + "\\" + paramService
+        jList = os.listdir(jPath)
+        for j in jList:
+            os.chdir(jPath)
+            osDir = os.listdir(j)
+            parentDir = jPath + "\\" + j
+            os.chdir(parentDir)
+            nameDir = os.path.basename(parentDir)
+            print(nameDir)
+            os.system(paramCommand)
+    elif paramService == "helix":
+        hPath = pathRoot + "\\" + paramService
+        hList = os.listdir(hPath)
+        for h in hList:
+            os.chdir(hPath)
+            osDir = os.listdir(h)
+            parentDir = hPath + "\\" + h
+            os.chdir(parentDir)
+            nameDir = os.path.basename(parentDir)
+            print(nameDir)
+            os.system(paramCommand)
+    elif paramService == "friday":
+        fPath = pathRoot + "\\" + paramService
+        fList = os.listdir(fPath)
+        for f in fList:
+            os.chdir(fPath)
+            osDir = os.listdir(f)
+            parentDir = fPath + "\\" + f
+            os.chdir(parentDir)
+            nameDir = os.path.basename(parentDir)
+            print(nameDir)
+            os.system(paramCommand)
     else:
-        print("please choose service group : " + ' ' .join(dir_root))
+        print("please choose service group : " + ' ' .join(dirRoot))
 
 
 service_name()
