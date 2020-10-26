@@ -1,9 +1,7 @@
 import os
 from os import name
 from sys import argv
-import git
 import sys
-from win10toast import ToastNotifier
 
 # pathRoot = "C:\\Users\\GDA-Admin\\Documents\\GTech\\Python\\development\\git\\repo\\"
 pathRoot = "C:\\Users\\GDA-Admin\\Documents\\GTech\\repo_gtech\\None\\Mapemall-2.0\\"
