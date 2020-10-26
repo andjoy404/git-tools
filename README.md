@@ -10,3 +10,5 @@
  ```
  python execute.exe jarvis git status
  ```
+
+>note: change variable `pathRoot` with your repository grop root path 
