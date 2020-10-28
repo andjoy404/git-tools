@@ -1,9 +1,7 @@
 import os
 from os import name
 from sys import argv
-import git
 import sys
-from win10toast import ToastNotifier
 
 # pathRoot = "C:\\Users\\GDA-Admin\\Documents\\GTech\\Python\\development\\git\\repo\\"
 pathRoot = "C:\\Users\\GDA-Admin\\Documents\\GTech\\repo_gtech\\None\\Mapemall-2.0\\"
@@ -20,7 +18,7 @@ def recDir():
     serviceList = (' ' .join(dirRoot))
     print(serviceList)
     if parC == "current":
-        sPath = pathRoot + "\\" + parB
+        sPath = pathRoot + "\\" + parA
         sList = os.listdir(sPath)
         for s in sList:
             os.chdir(sPath)
@@ -29,7 +27,7 @@ def recDir():
             os.chdir(parentDir)
             nameDir = os.path.basename(parentDir)
             print(nameDir)
-            os.system(parA + " " + parD + '|grep "*"')
+            os.system(parB + " " + parD + '|grep "*"')
     elif parA not in serviceList:
         print("please choose service group : " + serviceList)
     else:
