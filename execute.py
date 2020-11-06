@@ -1,5 +1,5 @@
 import os
-from os import name
+from os import name, popen
 from sys import argv
 import sys
 
@@ -16,13 +16,11 @@ parD = (' ' .join(sys.argv[4:5:]))
 
 def recDir():
     serviceList = (' ' .join(dirRoot))
-    print(serviceList)
     if parC == "current":
         sPath = pathRoot + "\\" + parA
         sList = os.listdir(sPath)
         for s in sList:
             os.chdir(sPath)
-            osDir = os.listdir(s)
             parentDir = sPath + "\\" + s
             os.chdir(parentDir)
             nameDir = os.path.basename(parentDir)
@@ -36,12 +34,13 @@ def recDir():
             sList = os.listdir(sPath)
             for s in sList:
                 os.chdir(sPath)
-                osDir = os.listdir(s)
                 parentDir = sPath + "\\" + s
                 os.chdir(parentDir)
                 nameDir = os.path.basename(parentDir)
                 print(nameDir)
                 os.system(par0)
+        else:
+            print("please choose service group : " + serviceList)
 
 
 recDir()

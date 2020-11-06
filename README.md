@@ -4,7 +4,7 @@
  
  - only current branch are shown :
  ```
- python execute.py git jarvis current branch
+ python execute.py jarvis git current branch
  ```
  - run git command on every repository in jarvis group :
  ```
