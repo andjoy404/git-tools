@@ -3,8 +3,9 @@ from os import name, popen
 from sys import argv
 import sys
 
-# pathRoot = "C:\\Users\\GDA-Admin\\Documents\\GTech\\Python\\development\\git\\repo\\"
-pathRoot = "C:\\Users\\GDA-Admin\\Documents\\GTech\\repo_gtech\\None\\Mapemall-2.0\\"
+# uncomment pathRoot base on your operating system
+# pathRoot = "C:\\Users\\Admin\\Documents\\repo-group-path\\" # windows path
+# pathRoot = "/home/user/repo-group-path" # linux path
 dirRoot = os.listdir(pathRoot)
 
 par0 = (' ' .join(sys.argv[2:]))
