@@ -2,13 +2,22 @@
  
  usage :
  
- - only current branch are shown :
+ - run git command on every repository in infrastructure group :
  ```
- python execute.py git jarvis current branch
+ python execute.py infrastructure git status
  ```
- - run git command on every repository in jarvis group :
+ 
+ **important command**
+ - if you want to commit with message insert single quote between each double quote, example :
  ```
- python execute.py jarvis git status
+ python execute.py infrastructure git commit -m '"'[name] your message'"'
  ```
+ 
+ **additional**
+ - command only current branch are shown :
+ ```
+ python execute.py infrastructure git current branch
+ ```
+ 
 
 >note: change variable `pathRoot` with your repository grop root path 
