@@ -2,19 +2,19 @@
  
  ## usage :
  * run git command on every repository in infrastructure group :
- ```sh
+ ```bash
  python execute.py infrastructure git status
  ```
  
  ## **important command**
  * if you want to commit with message insert single quote between each double quote, example :
- ```sh
+ ```bash
  python execute.py infrastructure git commit -m '"'[name] your message'"'
  ```
  
  ## **additional**
  * command only current branch are shown :
- ```sh
+ ```bash
  python execute.py infrastructure git current branch
  ```
  
